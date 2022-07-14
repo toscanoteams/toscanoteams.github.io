@@ -1,6 +1,5 @@
 
-document.getElementById('btnFetch')
-    .addEventListener('click',testGS)
+document.getElementById('btnFetch').addEventListener('click', testGS)
 
 function testGS() {
 
@@ -12,8 +11,8 @@ function testGS() {
         .then(r => r.json())
         .then(r => {
             console.log(r);
-            console.log(r.registro[0]._dia);
-            document.getElementById('fetchResponse').textContent = r.registro[0]._dia;
+            console.log(r[0].status);
+            document.getElementById('fetchResponse').textContent = r[0].status;
         })
 
 }
