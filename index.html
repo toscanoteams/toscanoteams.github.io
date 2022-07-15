@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- STYLES -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/header.css">
+
+    <base target="_top">
+    <title>TOSCANO APP V3</title>
 </head>
+
 <body>
+
+    <header>
+        <div>
+            <img src="resources/header/logo-web-toscano-verde.webp" alt="logo de toscano">
+
+            <!-- <img id='profilePic' src="https://drive.google.com/uc?export=view&id=133CqIIVfnzuNmnE2bkDx9qyGlzX0chiA" > -->
+
+            <div id="icon-container">
+                <h1>Hola,
+                    <b>
+                        <?= nombre?>
+                    </b>
+                </h1>
+                <!-- <i class="material-icons prefix" id="notifications" onclick="showNotificationDialog(event)">notifications</i> -->
+                <i class="material-icons prefix" id="account">account_circle</i>
+                <i class="material-icons prefix" id="logOut">highlight_off</i>
+                <div id="notification-dialog">
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
     <div id="fetchResponse">A</div>
     <button id="btnFetch">FETCH!</button>
     <button id="btnPost">Add Row</button>
-    
+
 
     <script src="/scripts/index.js"></script>
 </body>
+
 </html>
