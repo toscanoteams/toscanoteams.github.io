@@ -9,19 +9,21 @@ function doLogin(e) {
     console.log('BUTTON CLICKED');
 
     let data = Object.fromEntries(new FormData(document.getElementById('userpass')).entries());
-    console.log(data);
+    // console.log(data);
     const param0 = `${Object.keys(data)[0]}=${Object.values(data)[0]}`;
     const param1 = `${Object.keys(data)[1]}=${Object.values(data)[1]}`;
     const params = `?${param0}&${param1}`;
 
-    let url = 'https://script.google.com/macros/s/AKfycbyHHUluT1S5y3giWMEQ3aOqr5Fd_2eLggb2O3v8D2zlW2xWgxQM8HrM3JtMYJP2lBOeuQ/exec';
+    let url = 'https://script.google.com/macros/s/AKfycbyYPuXZa4MjnpIH0Xopxtf5q1N_8j1FBgWuP2x7tElBQLeOuBvZD65oGaeYBPFVof5M3w/exec';
     url += params;
-    console.log(params)
+    // console.log(params)
 
     fetch(url)
         .then(r => r.json())
         .then(r => {
-            console.log(r);
+            console.log("Promise solved");
+            console.log(r.tempID);
+            console.log(r.status);
             document.getElementById('fetchResponse').textContent = r.status;
         })
 
@@ -32,7 +34,7 @@ function testGS() {
 
     console.log('BUTTON CLICKED');
 
-    const url = 'https://script.google.com/macros/s/AKfycbyHHUluT1S5y3giWMEQ3aOqr5Fd_2eLggb2O3v8D2zlW2xWgxQM8HrM3JtMYJP2lBOeuQ/exec';
+    const url = 'https://script.google.com/macros/s/AKfycbyYPuXZa4MjnpIH0Xopxtf5q1N_8j1FBgWuP2x7tElBQLeOuBvZD65oGaeYBPFVof5M3w/exec';
 
     fetch(url)
         .then(r => r.json())
@@ -47,7 +49,7 @@ const idb = window.indexedDB;
 
 function addGS() {
 
-    const url = 'https://script.google.com/macros/s/AKfycbxIzgVLoQdiXryRw_pglluvYkEAAydrriFwxSf_DtrgqwAWbG-E09-dTy1TmwFecgsEAw/exec';
+    const url = 'https://script.google.com/macros/s/AKfycbyYPuXZa4MjnpIH0Xopxtf5q1N_8j1FBgWuP2x7tElBQLeOuBvZD65oGaeYBPFVof5M3w/exec';
 
     fetch(url, {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
