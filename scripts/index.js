@@ -26,7 +26,7 @@ function doLogin(e) {
             // console.log(r.status);
             document.getElementById('fetchResponse').textContent = r.status;
             if(r.status === 'logging') {
-                window.location.href = `/home?key=${r.tempID}`;
+                window.location.href = `/home.html?tempID=${r.tempID}`;
             }
         })
 
