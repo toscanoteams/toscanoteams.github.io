@@ -14,7 +14,7 @@ function doLogin(e) {
     const param1 = `${Object.keys(data)[1]}=${Object.values(data)[1]}`;
     const params = `?${param0}&${param1}`;
 
-    let url = 'https://script.google.com/macros/s/AKfycbyYPuXZa4MjnpIH0Xopxtf5q1N_8j1FBgWuP2x7tElBQLeOuBvZD65oGaeYBPFVof5M3w/exec';
+    let url = 'https://script.google.com/macros/s/AKfycbwH18ygIslhBO6MsFXVRJksdBrV5Bd84feaJpm8S8Di1SpWT5V27Ro7qMWlfnOT59GSVg/exec';
     url += params;
     // console.log(params)
 
@@ -22,9 +22,12 @@ function doLogin(e) {
         .then(r => r.json())
         .then(r => {
             console.log("Promise solved");
-            console.log(r.tempID);
-            console.log(r.status);
+            // console.log(r.tempID);
+            // console.log(r.status);
             document.getElementById('fetchResponse').textContent = r.status;
+            if(r.status === 'logging') {
+                window.location.href = `https://toscanoteams.github.io?key=${r.tempID}`;
+            }
         })
 
     document.getElementById('userpass').reset();
@@ -34,7 +37,7 @@ function testGS() {
 
     console.log('BUTTON CLICKED');
 
-    const url = 'https://script.google.com/macros/s/AKfycbyYPuXZa4MjnpIH0Xopxtf5q1N_8j1FBgWuP2x7tElBQLeOuBvZD65oGaeYBPFVof5M3w/exec';
+    const url = 'https://script.google.com/macros/s/AKfycbwH18ygIslhBO6MsFXVRJksdBrV5Bd84feaJpm8S8Di1SpWT5V27Ro7qMWlfnOT59GSVg/exec';
 
     fetch(url)
         .then(r => r.json())
@@ -49,7 +52,7 @@ const idb = window.indexedDB;
 
 function addGS() {
 
-    const url = 'https://script.google.com/macros/s/AKfycbyYPuXZa4MjnpIH0Xopxtf5q1N_8j1FBgWuP2x7tElBQLeOuBvZD65oGaeYBPFVof5M3w/exec';
+    const url = 'https://script.google.com/macros/s/AKfycbwH18ygIslhBO6MsFXVRJksdBrV5Bd84feaJpm8S8Di1SpWT5V27Ro7qMWlfnOT59GSVg/exec';
 
     fetch(url, {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
