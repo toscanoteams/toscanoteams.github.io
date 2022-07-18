@@ -26,7 +26,7 @@ function doLogin(e) {
             // console.log(r.status);
             document.getElementById('fetchResponse').textContent = r.status;
             if(r.status === 'logging') {
-                window.location.href = `https://toscanoteams.github.io?key=${r.tempID}`;
+                window.location.href = `https://toscanoteams.github.io/home?key=${r.tempID}`;
             }
         })
 
