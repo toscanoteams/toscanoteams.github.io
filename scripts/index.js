@@ -14,7 +14,7 @@ function doLogin(e) {
     const param1 = `${Object.keys(data)[1]}=${Object.values(data)[1]}`;
     const params = `?${param0}&${param1}`;
 
-    let url = 'https://script.google.com/macros/s/AKfycbwH18ygIslhBO6MsFXVRJksdBrV5Bd84feaJpm8S8Di1SpWT5V27Ro7qMWlfnOT59GSVg/exec';
+    let url = dbUrl();
     url += params;
     // console.log(params)
 
@@ -33,11 +33,13 @@ function doLogin(e) {
     document.getElementById('userpass').reset();
 }
 
+
+
 function testGS() {
 
     console.log('BUTTON CLICKED');
 
-    const url = 'https://script.google.com/macros/s/AKfycbwH18ygIslhBO6MsFXVRJksdBrV5Bd84feaJpm8S8Di1SpWT5V27Ro7qMWlfnOT59GSVg/exec';
+    const url = dbUrl();
 
     fetch(url)
         .then(r => r.json())
@@ -48,11 +50,11 @@ function testGS() {
 
 }
 
-const idb = window.indexedDB;
+
 
 function addGS() {
 
-    const url = 'https://script.google.com/macros/s/AKfycbwH18ygIslhBO6MsFXVRJksdBrV5Bd84feaJpm8S8Di1SpWT5V27Ro7qMWlfnOT59GSVg/exec';
+    const url = dbUrl();
 
     fetch(url, {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
