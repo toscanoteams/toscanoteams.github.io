@@ -12,3 +12,11 @@ html {
     font-family: Nunito, sans-serif;
     /* box-sizing: border-box; */
 }
+
+main {
+  padding: 1rem;
+}
+
+.inputDiv {
+  margin: .5rem 0;
+}

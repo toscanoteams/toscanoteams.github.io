@@ -8,7 +8,7 @@
 
     <!-- STYLES -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,10 +46,25 @@
         </div>
     </header>
 
-    <div id="fetchResponse">A</div>
-    <button id="btnFetch">FETCH!</button>
-    <button id="btnPost">Add Row</button>
+    
+    <main>
 
+        <form action="" id="userpass">
+            <div class="inputDiv">
+                <label for="usernameInput">Usuario:</label>
+                <input type="text" name="username" id="usernameInput">
+            </div>
+            <div class="inputDiv">
+                <label for="passwordInput">Contraseña</label>
+                <input type="text" name="password" id="passwordInput">
+            </div>
+            <button id="btnLogin">LOGIN</button>
+        </form>
+
+        <button id="btnFetch" disabled>FETCH</button>
+        <button id="btnPost"B disabled>Add Row</button>
+        <div id="fetchResponse"></div>
+    </main>
 
     <script src="/scripts/index.js"></script>
 </body>
