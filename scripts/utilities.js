@@ -1,5 +1,5 @@
 function dbUrl() {
-    return 'https://script.google.com/macros/s/AKfycbwo7g2BHnRops7s8awfiHXOX2wiFopke1GblgZXkYYaqYgeHUg77maWW_5qzGE4-EeX8w/exec';
+    return 'https://script.google.com/macros/s/AKfycby8k0-WHLDLq3ZexzEURdCk5JOqqP3kPg-CwyitqC0SKF85ZH2t7iiJ8ZpJJ5HAmilQzA/exec';
 }
 
 const idb = window.indexedDB;

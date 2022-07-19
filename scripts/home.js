@@ -14,7 +14,7 @@ async function afterLoad() {
 
     fetch(url)
         .then(response => response.json())
-        .then(data => console.log(data.userDB))
+        .then(data => {console.log(data.userDB); document.getElementById("beautified").innerHTML = JSON.stringify(data.userDB, undefined, 2);})
         .catch(error => console.log(error));
 
     // // await timeout(2000);
