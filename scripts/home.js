@@ -19,7 +19,11 @@ async function afterLoad() {
             
             console.log(data.userDB);
             // addData(data.userDB);
-            document.getElementById("beautified").innerHTML = JSON.stringify(data.userDB, undefined, 2);
+            document.getElementById("beautifiedV").innerHTML = JSON.stringify(data.userDB.registroVacaciones, undefined, 2);
+            document.getElementById("beautifiedP").innerHTML = JSON.stringify(data.userDB.userPersonal, undefined, 2);
+
+
+            // document.getElementById("beautified").innerHTML = JSON.stringify(data.userDB, undefined, 2);
         })
         .catch(error => console.log(error));
 
