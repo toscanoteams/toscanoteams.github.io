@@ -50,7 +50,7 @@ section:hover {
 } */
 
 /* MATERIAL PAPER ELEMENT  */
-section {
+.card {
     margin: 1rem;
     padding: 1rem;
     border-radius: .75rem;
@@ -61,9 +61,18 @@ section {
     transition: .3s;
 }
 
-section:hover {
+.card:hover {
     background-color: hsl(175, 100%, 100%);
     box-shadow: 0rem .3rem .6rem 0rem hsla(175, 100%, 30%, .7);
+}
+
+.card div {
+    border: 1px solid;
+}
+
+.cardContent {
+    border: 1px solid;
+    display: none;
 }
 
 /* MATERIAL FLAT WITH BORDER  */
@@ -83,13 +92,13 @@ section:hover {
     box-shadow: 0rem .3rem .6rem 0rem hsla(175, 50%, 50%, .5);
 } */
 
-pre {
-    /* padding: 1rem; */
-    /* border: 1px solid; */
-    /* border-radius: 1rem; */
-    /* background:
+/* pre {
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: 1rem;
+    background:
         linear-gradient(hsl(171, 100%, 90%), hsl(175, 100%, 90%)) padding-box,
         linear-gradient(-40deg, hsl(165, 100%, 60%), hsl(165, 100%, 45%)) border-box;
     border-radius: 1rem;
-    border: 2px solid transparent; */
-}
+    border: 2px solid transparent;
+} */
