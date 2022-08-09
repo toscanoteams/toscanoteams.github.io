@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+html {
+    font-family: Nunito, sans-serif;
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-color: hsl(175, 100%, 70%);
+}
+
+
+main {
+    /* border: 1px solid red; */
+    margin-top: 2.5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: stretch;
+}
+
+/* NEOMORPHISM  */
+/* section {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: .75rem;
+    width: 100%;
+    height: fit-content;
+    background-color: hsl(175, 100%, 90%);
+    box-shadow: -.2rem -.2rem .4rem 0rem hsl(0, 100%, 100%),
+        inset .1rem .1rem .2rem 0rem hsl(0, 100%, 100%),
+        .2rem .2rem .4rem 0rem hsl(175, 60%, 60%),
+        inset -.1rem -.1rem .2rem 0rem hsl(175, 60%, 60%);
+    transition: .2s;
+}
+
+section:hover {
+    background-color: hsl(175, 100%, 100%);
+    box-shadow:
+        -.2rem -.2rem .2rem .1rem hsla(0, 100%, 100%, 1),
+        inset .1rem .1rem .2rem 0rem hsl(0, 100%, 100%),
+        .3rem .3rem .6rem 0rem hsl(175, 60%, 60%),
+        inset -.1rem -.1rem .2rem 0rem hsl(175, 60%, 60%);
+} */
+
+/* MATERIAL PAPER ELEMENT  */
+section {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: .75rem;
+    width: 100%;
+    height: fit-content;
+    background-color: hsl(175, 100%, 90%);
+    box-shadow: 0rem .2rem .4rem 0rem hsla(175, 100%, 30%, .5);
+    transition: .3s;
+}
+
+section:hover {
+    background-color: hsl(175, 100%, 100%);
+    box-shadow: 0rem .3rem .6rem 0rem hsla(175, 100%, 30%, .7);
+}
+
+/* MATERIAL FLAT WITH BORDER  */
+/* section {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: .75rem;
+    width: 100%;
+    height: fit-content;
+    border: 2px solid hsl(175, 100%, 40%);
+    background-color: hsl(175, 100%, 90%);
+    transition: .3s;
+}
+
+section:hover {
+    background-color: hsl(175, 100%, 100%);
+    box-shadow: 0rem .3rem .6rem 0rem hsla(175, 50%, 50%, .5);
+} */
+
+pre {
+    /* padding: 1rem; */
+    /* border: 1px solid; */
+    /* border-radius: 1rem; */
+    /* background:
+        linear-gradient(hsl(171, 100%, 90%), hsl(175, 100%, 90%)) padding-box,
+        linear-gradient(-40deg, hsl(165, 100%, 60%), hsl(165, 100%, 45%)) border-box;
+    border-radius: 1rem;
+    border: 2px solid transparent; */
+}
