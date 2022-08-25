@@ -73,9 +73,8 @@ async function afterLoad() {
             .then(response => response.json())
             .then(data => {
 
-                // manageDB();
                 console.log('data', data.userDB);
-                // manageDB();
+                readData();
                 addData(data.userDB);
                 document.getElementById("beautifiedV").innerHTML = JSON.stringify(data.userDB.registroVacaciones, undefined, 2);
                 document.getElementById("beautifiedP").innerHTML = JSON.stringify(data.userDB.userPersonal, undefined, 2);
