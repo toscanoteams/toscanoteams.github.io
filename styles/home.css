@@ -72,7 +72,7 @@ section:hover {
 
 .cardContent {
     border: 1px solid;
-    display: none;
+    /* display: none; */
 }
 
 /* MATERIAL FLAT WITH BORDER  */
