@@ -29,21 +29,45 @@
 
             <!-- <img id='profilePic' src="https://drive.google.com/uc?export=view&id=133CqIIVfnzuNmnE2bkDx9qyGlzX0chiA" > -->
 
-            <div id="icon-container">
-                <h1>Hola,
-                    <b>
-                        <?= nombre?>
-                    </b>
-                </h1>
-                <!-- <i class="material-icons prefix" id="notifications" onclick="showNotificationDialog(event)">notifications</i> -->
-                <i class="material-icons prefix" id="account">account_circle</i>
-                <i class="material-icons prefix" id="logOut">highlight_off</i>
-                <div id="notification-dialog">
-
+            <div class="headerLinks">
+                <div class="saludos">
+                    <h1>Hola, <span id="nombreUser"></span></h1>
                 </div>
+                <!-- <i class="material-icons prefix" id="notifications" onclick="showNotificationDialog(event)">notifications</i> -->
+                <div class="personalUser">
+                    <i class="material-icons prefix" id="accountIcon">account_circle</i>
+                </div>
+                <!-- <div id="notification-dialog"></div> -->
             </div>
 
         </div>
+        <section id="userPanel">
+            <div id="userImg">
+                <i class="material-icons prefix large" id="accountImg">account_circle</i>
+            </div>
+            <div id="userFullName">
+                <span id="nombre"></span>
+                <br>
+                <span id="apellidos"></span>
+            </div>
+            <div id="userDates">
+                <p>
+                    Fecha nacimiento:
+                    <span id="fechaNacimiento"></span>
+                </p>
+            </div>
+            <div id="userContactInfo">
+                <p>
+                    Email:
+                    <span id="correo"></span>
+                </p>
+                <p>
+                    Teléfono:
+                    <span id="phone"></span>
+                </p>
+            </div>
+            <i class="material-icons prefix closeBtn" id="accountClose">cancel</i>
+        </section>
     </header>
 
     <main class="main">
@@ -66,9 +90,12 @@
             </div>
         </section>
 
+        
+
     </main>
 
     <script src="/scripts/utilities.js"></script>
+    <script src="/scripts/header.js"></script>
     <script src="/scripts/home.js"></script>
 
 </body>
