@@ -18,10 +18,10 @@ function manageHeader(userPersonal) {
         
         const userPanel = document.getElementById('userPanel');        
         const w = userPanel.offsetWidth;
-        userPanel.style.transform = 'translateX(calc(' + w +'px + 1rem))'
+        userPanel.style.transform = 'translateX(calc(' + w +'px))'
         const accountIcon = document.getElementById('accountIcon');
         accountIcon.style.transform = 'translateX(0rem)';
-        
+
     })
 
     // LOAD PERSONAL MENU
@@ -39,7 +39,7 @@ function showUserMenu(userPersonal) {
 
     const userPanel = document.getElementById('userPanel');
     const w = userPanel.offsetWidth;
-    userPanel.style.transform = 'translateX(calc(' + -w +'px - 1rem))'
+    userPanel.style.transform = 'translateX(calc(' + -w +'px))'
 
     const accountIcon = document.getElementById('accountIcon');
     accountIcon.style.transform = 'translateX(3rem)'
