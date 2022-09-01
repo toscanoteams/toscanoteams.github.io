@@ -107,9 +107,9 @@ section:hover {
     border: 2px solid transparent;
 } */
 
-@media screen (min-width: 600px) {
+/* @media screen (min-width: 600px) {
     main {
         flex-direction: column;
     }
     
-}
+} */

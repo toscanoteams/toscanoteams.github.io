@@ -29,7 +29,8 @@ header div img {
     align-items: center;
     justify-content: space-between;
 
-    /* border: 1px solid red; */
+    position: relative;
+    right: 0;
 }
 
 .headerLinks div {
@@ -62,6 +63,8 @@ header div i {
     padding: 0;
     cursor: pointer;
 }
+
+
 
 #userPanel {
     display: flex;
