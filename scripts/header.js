@@ -19,7 +19,7 @@ function manageHeader(userPersonal) {
         const userPanel = document.getElementById('userPanel');        
         const w = userPanel.offsetWidth;
         userPanel.style.transform = 'translateX(calc(' + w +'px))'
-        const accountIcon = document.getElementById('accountIcon');
+        const accountIcon = document.querySelector('.headerLinks');
         accountIcon.style.transform = 'translateX(0rem)';
 
     })
@@ -41,8 +41,8 @@ function showUserMenu(userPersonal) {
     const w = userPanel.offsetWidth;
     userPanel.style.transform = 'translateX(calc(' + -w +'px))'
 
-    const accountIcon = document.getElementById('accountIcon');
-    accountIcon.style.transform = 'translateX(3rem)'
+    const accountIcon = document.querySelector('.headerLinks');
+    accountIcon.style.transform = 'translateX(1.9rem)'
 
     const accountClose = document.getElementById('accountClose');
 

@@ -34,6 +34,8 @@ header div img {
 
     position: relative;
     right: 0;
+
+    transition: .3s;
 }
 
 .headerLinks div {
@@ -76,7 +78,7 @@ header div i {
 
     position: fixed;
     z-index: 100;
-    top: calc(2.3rem);
+    top: calc(2.8rem);
     left: 100vw;
     width: fit-content;
     height: 100vh;
@@ -112,9 +114,9 @@ header div i {
     font-size: 7rem;
 }
 
-#accountIcon {
+/* #accountIcon {
     transition: .3s;
-}
+} */
 
 .closeBtn {
     color: rgb(255, 100, 100);
