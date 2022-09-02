@@ -68,7 +68,7 @@ section:hover {
     /* z-index: 0; */
 }
 
-.card:hover {
+.card:active {
     background-color: hsl(175, 100%, 100%);
     box-shadow: 0rem .3rem .6rem 0rem hsla(175, 100%, 30%, .7);
 }
@@ -100,8 +100,14 @@ section:hover {
 } */
 
 @media screen and (min-width: 500px) {
+    
     main {
         flex-direction: row;
+    }
+
+    .card:hover {
+        background-color: hsl(175, 100%, 90%);
+        box-shadow: 0rem .3rem .6rem 0rem hsla(175, 100%, 30%, .7);
     }
     
 }
