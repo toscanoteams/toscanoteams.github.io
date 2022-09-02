@@ -22,8 +22,8 @@ main {
     margin-top: 2.5rem;
     padding: 1rem;
     display: flex;
-    justify-content: stretch;
-    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -57,7 +57,10 @@ section:hover {
     padding: 1rem;
     border-radius: .75rem;
     /* width: 100%; */
-    height: fit-content;
+    /* width: fit-content; */
+    width: min(calc(100vw - 4rem), 300px);
+    height: 100px;
+    overflow: hidden;
     background-color: hsl(175, 100%, 90%);
     box-shadow: 0rem .2rem .4rem 0rem hsla(175, 100%, 30%, .5);
     transition: .3s;
@@ -96,20 +99,9 @@ section:hover {
     box-shadow: 0rem .3rem .6rem 0rem hsla(175, 50%, 50%, .5);
 } */
 
-/* pre {
-    padding: 1rem;
-    border: 1px solid;
-    border-radius: 1rem;
-    background:
-        linear-gradient(hsl(171, 100%, 90%), hsl(175, 100%, 90%)) padding-box,
-        linear-gradient(-40deg, hsl(165, 100%, 60%), hsl(165, 100%, 45%)) border-box;
-    border-radius: 1rem;
-    border: 2px solid transparent;
-} */
-
-/* @media screen (min-width: 600px) {
+@media screen and (min-width: 500px) {
     main {
-        flex-direction: column;
+        flex-direction: row;
     }
     
-} */
+}
